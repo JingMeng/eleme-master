@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,7 +21,7 @@
             android:background="@drawable/shop_logo_title"
             />
 
-        <android.support.design.widget.AppBarLayout
+        <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,9 +59,9 @@
                 android:background="@drawable/bg_white_bottom_line"
                 />
 
-        </android.support.design.widget.AppBarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
 
-        <android.support.constraint.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/title_layout"
             android:layout_width="match_parent"
             android:layout_height="126dp"
@@ -83,7 +83,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 />
 
-            <android.support.constraint.ConstraintLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/title_bar_layout"
                 android:layout_width="match_parent"
                 android:layout_height="66dp"
@@ -91,7 +91,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 >
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/iv_title_back"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/iv_title_search"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/iv_title_pindan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     />
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/iv_title_more"
                     android:layout_width="wrap_content"
                     android:layout_height="44dp"
@@ -136,7 +136,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     />
 
-                <android.support.v7.widget.AppCompatTextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_title_search"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
@@ -154,9 +154,9 @@
                     app:layout_constraintTop_toTopOf="parent"
                     />
 
-            </android.support.constraint.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/iv_shop"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
@@ -166,7 +166,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 />
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/iv_like"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -178,7 +178,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 />
-        </android.support.constraint.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.wwq.eleme.view.widget.nested.NestedViewPager
             android:id="@+id/viewpager"
@@ -189,7 +189,7 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             />
         <!--<include layout="@layout/content_fling_fix_app_bar_layout"/>-->
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <TextView
         android:id="@+id/tvLoading"

@@ -45,7 +45,7 @@
                 android:background="@color/home_divider"
                 />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_shop_postcard_tip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                 />
         </LinearLayout>
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                 android:background="@color/home_divider"
                 />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_shop_discount_tip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
                 />
         </LinearLayout>
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_shop_postcard_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -138,7 +138,7 @@
             />
     </FrameLayout>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_shop_discount_content"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
         app:layout_constraintTop_toBottomOf="@+id/layout_shop_postcard_content"
         >
 
-        <android.support.constraint.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -161,7 +161,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             >
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_shop_discount_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -173,7 +173,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_shop_discount_range"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -184,7 +184,7 @@
                 app:layout_constraintTop_toTopOf="@id/tv_shop_discount_price"
                 />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_shop_discount_detail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
                 tools:visibility="visible"
                 />
 
-        </android.support.constraint.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
             android:id="@+id/view_shop_discount_content_divider"
@@ -209,7 +209,7 @@
             app:layout_constraintTop_toTopOf="parent"
             />
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_shop_discount_action"
             android:layout_width="40dp"
             android:layout_height="0dp"
@@ -222,7 +222,7 @@
             app:layout_constraintTop_toTopOf="parent"
             />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:id="@+id/layout_table_shop_discount_count"
@@ -237,7 +237,7 @@
         app:layout_constraintTop_toBottomOf="@+id/layout_shop_discount_content"
         >
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_table_shop_discount_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -247,7 +247,7 @@
             android:textSize="10sp"
             />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_table_shop_discount_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -274,14 +274,14 @@
 
         <TableRow>
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountTag"
                 android:background="@drawable/bg_border_full_green"
                 android:text="首单"
                 android:textColor="@color/green_alpha80"
                 />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountContent"
                 android:text="新用户下单立减20元"
                 />
@@ -290,14 +290,14 @@
         <TableRow
             android:layout_marginTop="2dp">
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountTag"
                 android:background="@drawable/bg_border_full_red"
                 android:text="促销"
                 android:textColor="@color/red_deep"
                 />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountContent"
                 android:text="来领个1元优惠卷"
                 />
@@ -306,14 +306,14 @@
         <TableRow
             android:layout_marginTop="2dp">
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountTag"
                 android:background="@drawable/bg_border_full_orange"
                 android:text="会员"
                 android:textColor="@color/home_orange"
                 />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountContent"
                 android:text="超级会员领取6元无门槛红包"
                 />
@@ -322,14 +322,14 @@
         <TableRow
             android:layout_marginTop="2dp">
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountTag"
                 android:background="@drawable/bg_border_full_blue"
                 android:text="满减"
                 android:textColor="@color/home_blue"
                 />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountContent"
                 android:text="满30减4，满60减8，满120减20"
                 />
@@ -338,14 +338,14 @@
         <TableRow
             android:layout_marginTop="2dp">
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountTag"
                 android:background="@drawable/bg_border_full_pink"
                 android:text="满赠"
                 android:textColor="@color/pink"
                 />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountContent"
                 android:text="满150赠送大瓶雪碧一瓶"
                 />
@@ -354,14 +354,14 @@
         <TableRow
             android:layout_marginTop="2dp">
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountTag"
                 android:background="@drawable/bg_border_full_yellow"
                 android:text="保险"
                 android:textColor="@color/home_yellow"
                 />
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 style="@style/tableShopDiscountContent"
                 android:text="该商户全部商品已由太平洋保险承保，食品安全有保障"
                 />

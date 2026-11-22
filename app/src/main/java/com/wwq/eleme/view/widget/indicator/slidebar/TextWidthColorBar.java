@@ -18,7 +18,7 @@ package com.wwq.eleme.view.widget.indicator.slidebar;
 import android.content.Context;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.support.annotation.DrawableRes;
+import androidx.annotation.DrawableRes;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;

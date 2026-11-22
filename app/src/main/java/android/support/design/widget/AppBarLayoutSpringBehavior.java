@@ -1,12 +1,14 @@
-package android.support.design.widget;
+package com.google.android.material.appbar;
+import com.google.android.material.animation.AnimationUtils;
 
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.VisibleForTesting;
-import android.support.v4.view.ViewCompat;
+import androidx.annotation.VisibleForTesting;
+import androidx.core.view.ViewCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -20,7 +22,7 @@ import com.wwq.eleme.view.widget.nested.ShopInfoDetailLayout;
 import java.util.Arrays;
 import java.util.List;
 
-import static android.support.v4.view.ViewCompat.TYPE_NON_TOUCH;
+import static androidx.core.view.ViewCompat.TYPE_NON_TOUCH;
 
 public class AppBarLayoutSpringBehavior extends AppBarLayout.Behavior {
 
@@ -386,7 +388,7 @@ public class AppBarLayoutSpringBehavior extends AppBarLayout.Behavior {
                 if (!offsetChanged && appBarLayout.hasChildWithInterpolator()) {
                     coordinatorLayout.dispatchDependentViewsChanged(appBarLayout);
                 }
-                appBarLayout.dispatchOffsetUpdates(getTopAndBottomOffset());
+                appBarLayout.onOffsetChanged(getTopAndBottomOffset());
                 updateAppBarLayoutDrawableState(coordinatorLayout, appBarLayout, newOffset,
                         newOffset < curOffset ? -1 : 1, false);
             } else if (curOffset != minOffset) {
@@ -562,7 +564,7 @@ public class AppBarLayoutSpringBehavior extends AppBarLayout.Behavior {
                 }
             }
 
-            final boolean changed = layout.setCollapsedState(collapsed);
+            final boolean changed = layout.setLifted(collapsed);
 
             if (Build.VERSION.SDK_INT >= 11 && (forceJump
                     || (changed && shouldJumpElevationState(parent, layout)))) {

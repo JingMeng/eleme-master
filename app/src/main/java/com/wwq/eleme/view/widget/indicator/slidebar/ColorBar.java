@@ -1,7 +1,7 @@
 package com.wwq.eleme.view.widget.indicator.slidebar;
 
 import android.content.Context;
-import android.support.annotation.DrawableRes;
+import androidx.annotation.DrawableRes;
 import android.view.View;
 
 public class ColorBar implements ScrollBar {

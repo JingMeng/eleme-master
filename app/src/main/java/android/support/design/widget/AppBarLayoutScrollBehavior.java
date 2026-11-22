@@ -1,4 +1,5 @@
-package android.support.design.widget;
+package com.google.android.material.appbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -6,9 +7,9 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
-import android.support.annotation.IdRes;
-import android.support.constraint.ConstraintLayout;
-import android.support.v4.view.ViewCompat;
+import androidx.annotation.IdRes;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.view.ViewCompat;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
